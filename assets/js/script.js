@@ -126,7 +126,7 @@ $(".list-group").on("blur", "input[type='text']", function() {
   var index = $(this)
     .closest(".list-group-item")
     .index();
-
+console.log(status, index, tasks)
   // update task in array and re-save to localstorage
   tasks[status][index].date = date;
   saveTasks();
